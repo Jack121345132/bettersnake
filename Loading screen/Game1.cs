@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -26,7 +27,8 @@ namespace Snake
         const int SnakeSize = 10; //tjocklekn av snake
         const int gameHeight = 50; //antal blocks i höjjd
         const int gameWidth = 100; //antal blocks i bred
-                                   //private SoundEffect eatSound; // eat sound
+        private SoundEffect eatSound;
+        private SoundEffect loseSound;  
 
         //private Song song;
         //Texture2D heartTexture;
